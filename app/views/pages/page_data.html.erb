@@ -1,0 +1,140 @@
+<div class="container-fluid">
+  <div class="home-page">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-xs-1">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Filter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Large modal -->
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="panel-body">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <div class="form-inline">
+                        <div class="form-group">
+                          <label for="exampleInputName2">Provinsi</label>
+                          <select class="form-control form-select" id="exampleInputName2" placeholder="Jane Doe">
+                            <option>Option</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail2">Kabupaten</label>
+                          <select class="form-control form-select" id="exampleInputName2" placeholder="Jane Doe">
+                            <option>Option</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-5">
+                      <div class="panel panel-default">
+                        <div class="panel-heading"><label>Waktu Kejadian</label></div>
+                        <div class="panel-body">
+                          <div class="form-inline pull-right">
+                            <div class="form-group">
+                              <ul class="list-inline">
+                                <li><label>Dari</label></li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>0</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>Bulan</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>Tahun</option>
+                                  </select>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="form-inline pull-right">
+                            <div class="form-group">
+                              <ul class="list-inline">
+                                <li><label>Sampai</label></li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>0</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>Bulan</option>
+                                  </select>
+                                </li>
+                                <li>
+                                  <select class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <option>Tahun</option>
+                                  </select>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-default pull-right">Filter</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th colspan="2" scope="colgroup">Provinsi</th>
+                  <th colspan="2" scope="colgroup">Kabupaten</th>
+                  <th>Bencana</th>
+                  <th>Waktu Kejadian</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th scope="col">Kode</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Kode</th>
+                  <th scope="col">Nama</th>
+                  <th colspan="2"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% 10.times do %>
+                  <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <%= render 'pagination' %>
+      </div>
+    </div>
+  </div>
+</div>
