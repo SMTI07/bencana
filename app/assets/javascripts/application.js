@@ -5,12 +5,20 @@
 // or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
+// compiled file.
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require fancybox
+//= require jquery.turbolinks
+//= require bootstrap-sprockets
+//= require bootstrap-datepicker
+//= require react
+//= require react_ujs
+//= require cocoon
+//= require jasny-bootstrap.min
+//= require_tree ./react_components
 //= require_tree .
