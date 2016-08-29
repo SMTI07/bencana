@@ -11,6 +11,7 @@ cd bencana #masuk ke folder projek 'bencana'
 bundle install
 rails db:migrate
 ```
+
 #### Cara Berkontribusi
 Dapat dengan membuat branch baru pada projek ini dengan cara:
 ```bash
