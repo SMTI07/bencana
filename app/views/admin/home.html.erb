@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 ">
+      <div class="panel panel-default">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>ID</th>
+              <th>Username</th>
+              <th colspan="3">Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% 10.times do %>
+              <tr>
+                <td>1</td>
+                <td>...</td>
+                <td>...</td>
+                <td>Show</td>
+                <td>Edit</td>
+                <td>Delete</td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <%= render 'pagination' %>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= controller_name == 'admin' ? 'admin-body' : '' %>">
+      <%= render (controller_name == 'admin' ? 'admin/layout' : 'pages/layout') %>
     <%= yield %>
   </body>
 </html>

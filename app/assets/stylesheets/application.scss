@@ -6,3 +6,17 @@
 @import "jquery.fancybox-thumbs";
 @import 'jasny-bootstrap';
 @import 'components/component';
+@import 'pages';
+.navmenu-default{
+  margin-top: 50px;
+}
+.admin-body {
+  padding-left: 40px;
+  padding-top: 60px;
+}
+@media (min-width: 992px) {
+  .admin-body {
+    padding-left: 350px;
+    padding-top: 60px;
+  }
+}
