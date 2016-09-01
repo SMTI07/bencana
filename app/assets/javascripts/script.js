@@ -1,5 +1,5 @@
 function init_script() {
-
+  // $('.navmenu').offcanvas()
 }
 
 if (typeof Turbolinks != 'undefined') {
